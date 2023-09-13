@@ -10,8 +10,6 @@ def read_repo_db(file_name):
                 if len(parts) == 2:
                     key, value = parts
                     db[key] = set(value.split())
-                else:
-                    raise ValueError(f"Incorrect format on line: {line}")
     return db
 
 
