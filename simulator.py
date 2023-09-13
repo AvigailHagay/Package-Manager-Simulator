@@ -83,12 +83,12 @@ command, *pkg_name = action.split()
 
 if command == "install" and pkg_name:
     install(pkg_name[0], repo_db, pkgs_db)
+    write_pkgs(pkgs_db)
 elif command == "uninstall" and pkg_name:
     uninstall(pkg_name[0], repo_db, pkgs_db)
+    write_pkgs(pkgs_db)
 elif command == "list":
     list_installed(pkgs_db)
 else:
     print("Invalid Command")
     exit(0)
-
-write_pkgs(pkgs_db)
