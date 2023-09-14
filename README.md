@@ -10,7 +10,7 @@ This is a simple package manager simulator written in Python. It allows you to i
 
 ## Files
 
-- `pkg.py`: The main Python script that contains the logic for the package manager simulator.
+- `simulator.py`: The main Python script that contains the logic for the package manager simulator.
 - `repo.db`: A file that contains the package dependencies. Each line should represent a package and its dependencies separated by a colon.
 - `pkgs.db`: A file that contains the list of installed packages. This file will be modified by the `pkg.py` script as packages are installed or uninstalled.
 
